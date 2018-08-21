@@ -13,5 +13,6 @@ Recommend editing this project in latest IntelliJIdea IDE with Cucumber java plu
 2. Test step definitions (Java code)  matching .feature file: src/test/java/teststepdefs/TestStepDefs.java
 
 The test report (Suites tab) should look like this:
+
  <img src="https://raw.githubusercontent.com/jaheikki/scompany-test1/master/test-report.png" width="400" height="500">
 
