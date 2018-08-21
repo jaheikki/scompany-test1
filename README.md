@@ -14,5 +14,5 @@ Recommend editing this project in latest IntelliJIdea IDE with Cucumber java plu
 
 The test report (Suites tab) should look like this:
 
- <img src="https://raw.githubusercontent.com/jaheikki/scompany-test1/master/test-report.png" width="400" height="500">
+ <img src="https://raw.githubusercontent.com/jaheikki/scompany-test1/master/test-report.png" width="600" height="300">
 
