@@ -21,3 +21,4 @@ buildNumber.properties
 .idea
 build
 browserstack.err
+allure-results
