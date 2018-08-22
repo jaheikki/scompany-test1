@@ -5,7 +5,7 @@ This project demoes running Java having BDD style test case descriptions (offere
 Guide to run test & get test report on your browser:
 1. Install git, Java 8 and Maven 3
 2. git clone https://github.com/jaheikki/scompany-test1.git
-3. mvn clean install #or by tag:  mvn clean install -Dcucumber.options="--tags @numbers
+3. mvn clean install #or by tag:  mvn clean install -Dcucumber.options="--tags @numbers"
 4. mvn allure:report #generate test report
 5. mvn jetty:run #start web server locally
 6. In browser: http://localhost:9899/ #should open test report main page 
