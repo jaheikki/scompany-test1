@@ -1,6 +1,7 @@
 # scompany-test1
 
 This project demoes running Java having BDD style test case descriptions (offered by Cucumber Java rel2)
+
 Guide to run test & get test report on your browser:
 1. Install git, Java 8 and Maven 3
 2. git clone https://github.com/jaheikki/scompany-test1.git
@@ -9,8 +10,11 @@ Guide to run test & get test report on your browser:
 5. mvn jetty:run #start web server locally
 6. In browser: http://localhost:9899/ #should open test report main page 
 
-Note: With VM option: -Dnumber_range_division_factor=2 you can affect which part of numbers are read from file:
-e.g. mvn clean install -Dcucumber.options="--tags @numbers -Dnumber_range_division_factor=2
+Hint1: With VM option: -Dnumber_range_division_factor you can affect which part of numbers are read from file:
+e.g. mvn clean install -Dcucumber.options="--tags @numbers" -Dnumber_range_division_factor=2 #value 2 is default
+
+Hint2: With VM option: -Denv=<env> you can specify which env property file is used to read settings
+e.g. mvn clean install -Dcucumber.options="--tags @numbers" -Denv=local #local is also the default 
 
 Recommend editing this project in latest IntelliJIdea IDE with Cucumber java plugin. If not, you can find relevant files from following directories:
 1. BDD/Gherkin style test case description: src/test/resources/acceptancetests/number-handling.feature
