@@ -1,12 +1,10 @@
 package teststepdefs;
 
-import cucumber.api.java.en.Given;
+import common.CommonVars;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -38,7 +36,7 @@ public class TestStepDefs {
         printMethodName();
 
         try {
-            Files.lines(Paths.get(filename)).limit(lastNumber/2).forEach(System.out::println);
+            Files.lines(Paths.get(filename)).limit(lastNumber/ CommonVars.numberRangeDivisionFactor).forEach(System.out::println);
         } catch (Exception e) {
             e.printStackTrace();
         }
